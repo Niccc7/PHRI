@@ -1,0 +1,59 @@
+footer {
+display: grid;
+grid-template-columns: auto auto auto auto auto;
+background-color: #432D77;
+padding: 50px;
+color: white;
+}
+
+footer .hubungi{
+width: 150px;
+}
+
+footer .buka{
+width: 150px;
+padding-left: 10px;
+}
+
+footer .foto{
+text-align: center;
+padding-left: 30px;
+padding-right: 40px;
+}
+
+footer .tentangkami{
+width: 350px;
+}
+
+footer .vl{
+border-left: 2px solid white;
+height: 200px;
+}
+
+footer .logo .bi-instagram{
+color: #f1f1f1;
+font-size: 25px;
+}
+footer .logo .bi-facebook{
+color: #f1f1f1;
+font-size: 25px;
+}
+footer .logo .bi-twitter{
+color: #f1f1f1;
+font-size: 25px;
+}
+footer .logo .bi-youtube{
+color: #f1f1f1;
+font-size: 25px;
+}
+footer .logo .bi-tiktok{
+color: #f1f1f1;
+font-size: 25px;
+}
+footer .logo p{
+width: 225px;
+}
+footer .hr{
+padding-top: 120px;
+width: 450%;
+}

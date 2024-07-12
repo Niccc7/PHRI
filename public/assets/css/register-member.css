@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    font-family: sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.Logo {
+    position: absolute;
+    top: 105%;
+    color: #fff;
+    padding-left: 30px;
+}
+
+.Copyright {
+    position: absolute;
+    top: 110%;
+    left: 80%;
+    color: #fff;
+}
+
+#phri-logo {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+.container {
+    padding: 60px 0;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    font-size: 74px;
+    margin-bottom: 20px;
+}
+
+.input-handphone {
+    position: relative;
+}
+
+#nomor-handphone {
+    width: 100%;
+    padding-left: 40px;
+}
+
+.region-number {
+    position: absolute;
+    left: 5px;
+    border-radius: 5px;
+    top: 6px;
+    font-size: 13px;
+    padding: 2px 4px;
+    background-color: #dfdfdf;
+}
+
+.box {
+    width: 290px;
+    background-color: white;
+    height: fit-content;
+    padding: 15px 10px;
+    border-radius: 7px;
+    border: 1px solid #7e7e7e;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.box form .input-group {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 0px;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.box form .input-group label {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.box form .input-group input {
+    padding: 7px 5px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #7e7e7e;
+}
+
+.input-radio {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+.box form .input-group .input-radio label {
+    font-size: 12px;
+}
+
+.disable {
+    visibility: hidden;
+}
+
+#ungu {
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    display: block;
+    left: 0;
+    z-index: 0;
+}
+
+#kuning {
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    display: block;
+    right: 0;
+    z-index: 0;
+}
+
+.button {
+    display: flex;
+    position: relative;
+    left: 73%;
+}
+
+.kosong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 40px;
+    width: 120px;
+    color: #f4f4f4;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #EF4444;
+}
+
+.kosong i {
+    margin-right: 3px;
+}
+
+.register {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6px;
+    height: 40px;
+    width: 100px;
+    color: #f4f4f4;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #F9B045;
+}
+
+@media (min-width: 540px) {
+    .container .box form .input-group {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr;
+        gap: 15px;
+        align-items: center;
+        margin-bottom: 10px;
+        text-align: right;
+    }
+
+    .box form .input-group label {
+        text-align: right;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .box form .input-group .input-radio label {
+        font-size: 15px;
+    }
+
+    #kuning {
+        width: 58%;
+        height: 100%;
+        position: fixed;
+        display: block;
+        right: 0;
+        z-index: 0;
+    }
+
+    #ungu {
+        width: 58%;
+        height: 100%;
+        display: block;
+        left: 0;
+        position: fixed;
+        z-index: 0;
+    }
+
+    body .container .box {
+        width: 470px;
+    }
+}
+
+@media (min-width: 768px) {
+    body .container .box {
+        width: 750px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    body .container .box {
+        width: 900px;
+    }
+}

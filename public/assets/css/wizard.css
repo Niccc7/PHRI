@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  position: relative;
+
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transform: translate(-50%);
+  
+}
+  .region-number{
+    position: absolute;
+    left: 5px;
+    border-radius: 5px;
+    top: 6px;
+    font-size: 13px;
+    padding: 2px 4px;
+    background-color: #dfdfdf;
+  }
+  .box {
+    width: 1158px;
+    background-color: white;
+    height: fit-content;
+    padding: 15px 10px;
+    padding-bottom: 45px;
+    border-radius: 7px;
+    border: 1px solid #7e7e7e;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    display: block;
+    justify-content: center;
+    align-items: start;
+  }
+  
+  .box form .input-group {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 0px;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  .box form .input-group label {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .box form .input-group input {
+    padding: 7px 5px;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #7e7e7e;
+  }
+  
+  
+  @media (min-width: 540px){
+    .container .box form .input-group {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      grid-template-rows: 1fr;
+      gap: 15px;
+      align-items: center;
+      margin-bottom: 10px;
+      text-align: right;
+    }
+    .box form .input-group label {
+      text-align: right;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .box form .input-group .input-radio label{
+      font-size: 15px;
+    }
+    body .container .box{
+      width: 470px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    body .container .box {
+      width: 750px;
+    }
+    
+  }
+  
+  @media (min-width: 992px){
+    body .container .box {
+      width: 900px;
+    }
+  }
+  button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.kosong{
+    width: 514px;
+    height: 34px;
+    border-radius: 8px;
+    background: #432D77;
+    color: #f1f1f1;
+    font-size: 18px;
+    font-weight: bold;
+}
+.selanjutnya{
+    height:28px;
+    width: 125px;
+    font-size: 16px;
+    background: transparent;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.sebelumnya{
+    height:28px;
+    width: 125px;
+    font-size: 16px;
+    background: transparent;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.tombol{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    align-items: center;
+    padding-left: 50px;
+}
+i{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.tanya{
+    font-size: 12px;
+}
+hr{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #4d4d4d;
+    height: 2.5px;
+}
+.tambah{
+    height: 25px;
+    position: relative;
+    left: 98.5%;
+    transform: translate(-50%);
+    margin: 20px 0px 20px 0px;
+}
+select{
+  height: 50px;
+  font-size: 16px;
+  border-radius: 5px;
+}

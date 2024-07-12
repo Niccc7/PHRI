@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background: #f1f1f1;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 15px;
+    background: #432d77;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 590px;
+    height: 50px;
+    background: #432d77;
+    border-radius: 9px;
+    font-size: 0;
+}
+
+nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: azure;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+}
+
+nav .berita {
+    color: #f9b045;
+}
+
+nav .animation {
+    position: absolute;
+    height: 5px;
+    bottom: 0;
+    z-index: 0;
+    background: #f9b045;
+    width: 100px;
+    border-radius: 8px;
+    transition: all 0.4s ease 0s;
+}
+
+a:nth-child(1) {
+    width: 100px;
+}
+
+nav .start-home,
+a:nth-child(1):hover ~ .animation {
+    width: 90px;
+    left: 7px;
+}
+
+a:nth-child(2) {
+    width: 110px;
+}
+
+nav .start-home,
+a:nth-child(2):hover ~ .animation {
+    width: 90px;
+    left: 110px;
+}
+
+a:nth-child(3) {
+    width: 100px;
+}
+
+nav .start-blog,
+a:nth-child(3):hover ~ .animation {
+    width: 106px;
+    left: 206px;
+}
+
+a:nth-child(4) {
+    width: 160px;
+}
+
+nav .start-protofolio,
+a:nth-child(4):hover ~ .animation {
+    width: 120px;
+    left: 330px;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    padding-right: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    height: 40px;
+    width: fit-content;
+}
+
+.pemisah {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-right: 40px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content button {
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #cac9c9;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.dropdown-content button:hover {
+    background-color: #cac9c9;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #432D77;
+}
+
+.login {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.post-header{
+    width: 100%;
+    height: 500px;
+    background: #37265d;
+}
+
+.post-container{
+    max-width: 800px;
+    margin: auto;
+    width: 100% !important;
+    padding-top: 50px;
+}
+
+.header-title{
+    color: black;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.header-content{
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-home{
+    color: #F9B045;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.icon-back{
+    position: absolute;
+    margin-top: 6px;
+    font-size: 18px;
+}
+
+.header-title{
+    font-size: 2.5rem;
+    color: #dedede;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.img-berita{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    font-family: sans-serif;
+}
+
+.post-text{
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin: 1rem 0;
+}
+
+.tanggal-berita{
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin: 1rem 0;
+}
+
+.isi{
+    display: flex;
+    height: 100px;
+    width: 300px;
+}
